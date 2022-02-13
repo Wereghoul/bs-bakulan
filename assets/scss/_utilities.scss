@@ -1,0 +1,33 @@
+// text
+.text {
+	&-purple-dark {
+		color: $purple-dark;
+	}
+	&-carrot-red {
+		color: $carrot-red;
+	}
+}
+// background
+.bg {
+	&-purple-dark {
+		background-color: $purple-dark;
+	}
+	&-purple-dark-20 {
+		// background-color: darken($purple-dark, 20%);
+		background-color: mix(black, $purple-dark, 20%);
+	}
+	&-carrot-red {
+		color: $carrot-red;
+	}
+}
+
+// hover
+.hover {
+	transition: 0.3s ease;
+	color: lighten($color: #fff, $amount: 50%) !important;
+
+	&-link:hover {
+		@extend .hover;
+		text-decoration: underline !important;
+	}
+}
